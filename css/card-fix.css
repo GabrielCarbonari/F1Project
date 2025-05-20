@@ -1,0 +1,162 @@
+/* Correções para os cards de F1 */
+
+/* Ajustes para o nome e ícones de campeonato */
+.name-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Reduzindo o espaçamento entre nome e nacionalidade */
+.nationality {
+    margin-bottom: 0.2rem;
+}
+
+.driver-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--f1-red);
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Ajustes para os ícones de troféu */
+.championship-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    direction: rtl; /* Para garantir que os itens vão da direita para a esquerda */
+}
+
+.championship-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+
+/* Tamanhos específicos para pilotos com muitos campeonatos */
+.icon-schumacher {
+    width: 8px;
+    height: 8px;
+}
+
+.icon-hamilton {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-fangio {
+    width: 12px;
+    height: 12px;
+}
+
+.icon-vettel, .icon-verstappen {
+    width: 22px;
+    height: 22px;
+}
+
+/* Ajustes para as imagens dos pilotos */
+.driver-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--f1-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.driver-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    z-index: 1;
+}
+
+.driver-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+/* Ajustes para linha de seasons/temporadas */
+.seasons-stat {
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed var(--f1-light-gray);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Classes para tamanhos de fonte adaptativos nas temporadas */
+.seasons-value {
+    font-size: 0.9rem;
+}
+
+.seasons-value-medium {
+    font-size: 0.8rem;
+}
+
+.seasons-value-small {
+    font-size: 0.7rem;
+}
+
+.seasons-value-xsmall {
+    font-size: 0.65rem;
+    letter-spacing: -0.3px;
+}
+
+.seasons-value-xxsmall {
+    font-size: 0.6rem;
+    letter-spacing: -0.5px;
+}
+
+/* Ajustes para as linhas de estatísticas */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.label {
+    color: var(--f1-red);
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Ajuste para container de cards */
+.drivers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}

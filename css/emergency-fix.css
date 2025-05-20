@@ -1,0 +1,36 @@
+/* Correção de emergência para estatísticas */
+
+/* Garantir que pole positions e outras estatísticas nunca tenham "..." */
+.pole-positions-value::after,
+.championships-value::after,
+.race-entries-value::after,
+.race-starts-value::after,
+.wins-value::after,
+.podiums-value::after,
+.fastest-laps-value::after {
+    content: attr(data-fixed-value);
+}
+
+/* Forçar exibição correta para nacionalidades com problemas */
+.driver-card .flag-container img[src*="XX.svg"] {
+    display: none;
+}
+
+/* Garantir que as temporadas estejam na mesma linha */
+.seasons-stat {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Forçar que não haja quebra de linha para pole positions */
+.pole-positions-value,
+.championships-value,
+.race-entries-value,
+.race-starts-value,
+.wins-value,
+.podiums-value,
+.fastest-laps-value {
+    white-space: nowrap !important;
+    display: inline !important;
+}

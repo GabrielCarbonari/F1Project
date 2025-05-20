@@ -1,0 +1,64 @@
+/* CSS ajustado para caber na barra cinza e centralizar a cruz */
+.dates-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* Distribuir espaço */
+    width: 100% !important;
+    margin: 8px 0 !important;
+    padding: 8px 10px !important;
+    background-color: #f0f0f0 !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Estilo para os itens de data */
+.date-item {
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    justify-content: center !important; /* Centralizar conteúdo */
+}
+
+/* Separação entre os itens */
+.birth-item {
+    margin-right: auto !important; /* Empurra para a esquerda */
+}
+
+.death-item {
+    display: inline-flex !important;
+    margin-left: auto !important; /* Centraliza */
+    position: relative !important;
+    left: -10px !important; /* Pequeno ajuste para melhor centralização */
+}
+
+/* Texto das datas em tamanho adequado */
+.birth-date-text, .death-date-text {
+    display: inline !important;
+    margin-left: 4px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    font-size: 0.9rem !important; /* Tamanho reduzido para caber melhor */
+}
+
+/* Ícones ajustados */
+.birth-icon {
+    display: inline-block !important;
+    width: 18px !important;
+    height: 18px !important;
+    vertical-align: middle !important;
+}
+
+.death-icon {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    vertical-align: middle !important;
+}
+
+/* Esconder itens quando não há data */
+.birth-item.hidden, .death-item.hidden {
+    display: none;
+}

@@ -1,0 +1,73 @@
+/* Arquivo CSS personalizado para tratamento especial dos ícones de campeonato */
+
+/* Tamanho padrão para os ícones de laurel */
+.laurel-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+
+/* Estilo para Juan Manuel Fangio - manter o tamanho anterior */
+.laurel-icon-fangio {
+    width: 12px !important;
+    height: 12px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Estilo para Sebastian Vettel - ícones maiores próximos ao nome */
+.laurel-icon-vettel {
+    width: 22px !important;
+    height: 22px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Estilo para Max Verstappen - ícones maiores próximos ao nome */
+.laurel-icon-verstappen {
+    width: 22px !important;
+    height: 22px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Estilo para os ícones de Michael Schumacher - extra pequenos */
+.laurel-icon-extra-small {
+    width: 8px !important; /* Tamanho extra reduzido para Michael Schumacher */
+    height: 8px !important;
+    margin: 0px !important; /* Sem margens para maximizar o espaço */
+}
+
+/* Estilo para os ícones de Lewis Hamilton - otimizado para o espaço disponível */
+.laurel-icon-lewis {
+    width: 14px !important; /* Tamanho aumentado, mas ainda cabe na mesma linha */
+    height: 14px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Classe para reduzir o espaço entre o nome e os ícones (Michael Schumacher) */
+.reduce-name-space {
+    margin-left: -10px !important; /* Margem negativa aumentada para aproximar mais os ícones do nome */
+}
+
+/* Garantir que os ícones não quebrem linha e reduzir espaço em branco */
+.championship-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    direction: rtl; /* Para garantir que os ícones apareçam da direita para a esquerda */
+    overflow: visible; /* Permite visualização completa dos ícones */
+    margin-left: -15px !important; /* Reduz espaço entre nome e ícones para todos os pilotos */
+}
+
+/* Classes para reduzir o tamanho da fonte em valores de seasons muito longos */
+.seasons-value-small {
+    font-size: 0.8rem !important;
+}
+
+.seasons-value-xsmall {
+    font-size: 0.7rem !important;
+}

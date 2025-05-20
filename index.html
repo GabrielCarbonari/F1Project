@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 Drivers Album</title>
+    <!-- Script de redirecionamento removido -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/dates-style.css">
+    <link rel="stylesheet" href="css/seasons-fix-special.css?v=202505171607">
+    <link rel="stylesheet" href="css/card-fix.css">
+    <link rel="stylesheet" href="css/direct-solution.css">
+    <link rel="stylesheet" href="css/emergency-fix.css">
+    <link rel="stylesheet" href="css/driver-images.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/f1-logo.svg" alt="Formula 1 Logo">
+            </div>
+            <h1>Formula 1 Drivers Album</h1>
+        </div>
+    </header>
+
+    <div class="filter-section">
+        <div class="filter-container">
+            <div class="sort-controls">
+                <label for="filter-select">Sort by:</label>
+                <select id="filter-select">
+                    <option value="name">Driver name</option>
+                    <option value="wins">Wins</option>
+                    <option value="championships">Championships</option>
+                    <option value="age">Age</option>
+                    <option value="seasons">Seasons</option>
+                    <option value="country">Country</option>
+                    <option value="raceStarts">Race starts</option>
+                    <option value="raceEntries">Race entries</option>
+                    <option value="polePositions">Pole positions</option>
+                    <option value="podiums">Podiums</option>
+                    <option value="fastestLaps">Fastest laps</option>
+                </select>
+                <button id="sort-order-btn" class="sort-btn">
+                    <i class="fas fa-sort-up"></i>
+                </button>
+            </div>
+            
+            <div class="search-container">
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" placeholder="Driver name...">
+                <button id="search-btn" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id="loading-overlay">
+            <div class="spinner"></div>
+            <p>Carregando pilotos...</p>
+        </div>
+        <div class="drivers-container" id="drivers-grid"></div>
+        
+        <div class="pagination">
+            <button id="prev-page" class="page-btn" disabled>
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            
+            <div class="page-selector">
+                <span id="page-info">Page 1 of 1</span>
+                <div class="page-input-container">
+                    <label for="page-input">Go to page:</label>
+                    <input type="number" id="page-input" min="1" value="1">
+                    <button id="go-to-page-btn" class="page-btn">Go</button>
+                </div>
+            </div>
+            
+            <button id="next-page" class="page-btn">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p> 2025 Formula 1 Drivers Album - Created with  for F1 fans</p>
+    </footer>
+
+    <template id="driver-card-template">
+        <div class="driver-card">
+            <div class="driver-image">
+                <img src="" alt="">
+            </div>
+            <div class="driver-info">
+                <div class="name-container">
+                    <h2 class="driver-name"></h2>
+                    <div class="championship-icons"></div>
+                </div>
+                <div class="nationality">
+                    <img src="" alt="" class="flag">
+                    <span class="country-name"></span>
+                </div>
+                <div class="dates-row">
+                    <span class="date-item birth-item">
+                        <img src="images/red circle.svg" class="birth-icon" alt="Born">
+                        <span class="birth-date-text"></span>
+                    </span>
+                    <span class="date-item death-item">
+                        <img src="images/cross.svg" class="death-icon" alt="Died">
+                        <span class="death-date-text"></span>
+                    </span>
+                </div>
+                <div class="stat seasons-stat">
+                    <span class="label">Seasons:</span>
+                    <span class="value seasons-value"></span>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="label">Championships:</span>
+                        <span class="value championships-value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Race entries:</span>
+                        <span class="value race-entries-value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Race starts:</span>
+                        <span class="value race-starts-value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Wins:</span>
+                        <span class="value wins-value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Podiums:</span>
+                        <span class="value podiums-value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Pole positions:</span>
+                        <span class="value pole-positions-value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Fastest laps:</span>
+                        <span class="value fastest-laps-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/fix-stats-display.js"></script>
+    <script src="js/script.js?v=202505171657"></script>
+    <script src="js/dates-fixer.js"></script>
+    <script src="js/sort-fix.js?v=202505171658"></script>
+    <script src="js/fix-display-issues.js"></script>
+    <script src="js/direct-fixes.js"></script>
+    <script src="js/load-driver-images.js"></script>
+    <script src="js/fix-edgar-barth.js?v=202505171614"></script>
+    <!-- Solução direta no HTML para garantir que seja aplicada -->
+    <style>
+        /* Estilo APENAS para os ANOS (value) dos pilotos especiais */
+        [data-special-seasons="true"] .seasons-stat .value {
+            font-size: 0.77rem !important;
+        }
+        
+        /* Exceção específica APENAS para os ANOS do André Pilette */
+        [data-driver-name="André Pilette"] .seasons-stat .value {
+            font-size: 0.67rem !important;
+        }
+    </style>
+    <script>
+        // Aplicar o ajuste imediatamente e em todos os momentos relevantes
+        function fixSpecialDriversSeasons() {
+            const specialDrivers = ["André Pilette", "Bob Gerard", "Louis Chiron", "Pedro de la Rosa"];
+            
+            specialDrivers.forEach(driverName => {
+                document.querySelectorAll('.driver-card').forEach(card => {
+                    const nameEl = card.querySelector('.driver-name');
+                    if (nameEl && nameEl.textContent.trim() === driverName) {
+                        // Marcar o card com um atributo para aplicar o CSS
+                        card.setAttribute('data-special-seasons', 'true');
+                        
+                        // Aplicar estilo APENAS ao elemento dos anos (value), NÃO à palavra "Seasons"
+                        const yearsElement = card.querySelector('.seasons-stat .value');
+                        if (yearsElement) {
+                            // Exceção específica para André Pilette
+                            if (driverName === "André Pilette") {
+                                // Apenas modificar o tamanho dos anos
+                                yearsElement.style.fontSize = '0.67rem';
+                                card.setAttribute('data-driver-name', 'André Pilette');
+                            } else {
+                                // Para os outros pilotos especiais
+                                yearsElement.style.fontSize = '0.77rem';
+                            }
+                            // Garantir que os anos fiquem em uma linha
+                            yearsElement.style.whiteSpace = 'nowrap';
+                            console.log('Ajuste aplicado APENAS aos anos de: ' + driverName);
+                        }
+                    }
+                });
+            });
+        }
+        
+        // Aplicar em vários momentos para garantir
+        document.addEventListener('DOMContentLoaded', fixSpecialDriversSeasons);
+        window.addEventListener('load', fixSpecialDriversSeasons);
+        
+        // Monitorar mudanças na página
+        new MutationObserver(fixSpecialDriversSeasons).observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        
+        // Aplicar com atraso para garantir que funcione após carregamento dinâmico
+        setTimeout(fixSpecialDriversSeasons, 300);
+        setTimeout(fixSpecialDriversSeasons, 800);
+        setTimeout(fixSpecialDriversSeasons, 1500);
+        
+        // Monitorar navegação e busca
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.page-btn') || e.target.closest('#search-btn')) {
+                setTimeout(fixSpecialDriversSeasons, 300);
+            }
+        });
+    </script>
+</body>
+</html>

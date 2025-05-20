@@ -1,0 +1,93 @@
+/* Solução emergencial para cards com muitas temporadas */
+
+/* Estilos para o card do André Pilette */
+[data-driver-name="André Pilette"] .seasons-stat {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+[data-driver-name="André Pilette"] .seasons-stat .value {
+    font-size: 0.65rem !important;
+    letter-spacing: -0.5px !important;
+    text-overflow: clip !important; /* Impedir reticências */
+}
+
+/* Estilos para Bob Gerard */
+[data-driver-name="Bob Gerard"] .seasons-stat {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+[data-driver-name="Bob Gerard"] .seasons-stat .value {
+    font-size: 0.72rem !important;
+    letter-spacing: -0.3px !important;
+}
+
+/* Estilos para Louis Chiron */
+[data-driver-name="Louis Chiron"] .seasons-stat {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+[data-driver-name="Louis Chiron"] .seasons-stat .value {
+    font-size: 0.72rem !important;
+    letter-spacing: -0.3px !important;
+}
+
+/* Estilos para Pedro de la Rosa */
+[data-driver-name="Pedro de la Rosa"] .seasons-stat {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+[data-driver-name="Pedro de la Rosa"] .seasons-stat .value {
+    font-size: 0.72rem !important;
+    letter-spacing: -0.3px !important;
+}
+
+/* Estilos para Edgar Barth */
+[data-driver-name="Edgar Barth"] .seasons-stat {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+[data-driver-name="Edgar Barth"] .seasons-stat .value {
+    font-size: 0.72rem !important;
+    letter-spacing: -0.3px !important;
+}
+
+/* Forçar exibição inline e sem quebra */
+[data-driver-name="André Pilette"] .seasons-stat::after,
+[data-driver-name="Bob Gerard"] .seasons-stat::after, 
+[data-driver-name="Louis Chiron"] .seasons-stat::after,
+[data-driver-name="Pedro de la Rosa"] .seasons-stat::after,
+[data-driver-name="Edgar Barth"] .seasons-stat::after {
+    content: "" !important;
+    display: inline-block !important;
+    clear: none !important;
+}
+
+/* Remover qualquer quebra de linha */
+[data-driver-name="André Pilette"] .seasons-stat br,
+[data-driver-name="Bob Gerard"] .seasons-stat br,
+[data-driver-name="Louis Chiron"] .seasons-stat br,
+[data-driver-name="Pedro de la Rosa"] .seasons-stat br,
+[data-driver-name="Edgar Barth"] .seasons-stat br {
+    display: none !important;
+}
+
+/* Correção específica para o país do Edgar Barth */
+.driver-card .driver-name:contains('Edgar Barth') ~ .driver-country {
+    font-size: 0 !important;
+}
+
+.driver-card .driver-name:contains('Edgar Barth') ~ .driver-country::before {
+    content: 'Germany' !important;
+    font-size: 1rem !important;
+    display: inline-block !important;
+}

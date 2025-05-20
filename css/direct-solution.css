@@ -1,0 +1,45 @@
+/* Solução direta - sem espaço, sem quebra, ajuste automático */
+.seasons-stat {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+/* Espaçamento de 0.2rem entre Seasons: e o valor */
+.seasons-stat .label {
+    margin: 0 !important;
+    margin-right: 0.2rem !important;
+    padding: 0 !important;
+    display: inline !important;
+}
+
+.seasons-stat .value {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline !important;
+}
+
+/* Forçar tamanho específico para pilotos com temporadas longas */
+[data-driver-name="Lewis Hamilton"] .seasons-value,
+[data-driver-name="Fernando Alonso"] .seasons-value,
+[data-driver-name="Alan Jones"] .seasons-value,
+[data-driver-name="Alain Prost"] .seasons-value,
+[data-driver-name="Nico Hulkenberg"] .seasons-value,
+[data-driver-name="Nico Hülkenberg"] .seasons-value,
+[data-driver-name="Emerson Fittipaldi"] .seasons-value,
+[data-driver-name="Nico Rosberg"] .seasons-value,
+[data-driver-name="Rubens Barrichello"] .seasons-value,
+[data-driver-name="Michael Schumacher"] .seasons-value,
+/* Detecção automática de temporadas longas */
+[data-long-seasons="true"] .seasons-value {
+    font-size: 0.8rem !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Forçar que todas as temporadas estejam sempre em uma única linha */
+.seasons-stat {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}

@@ -1,0 +1,56 @@
+/* Correção final para temporadas centralizadas */
+.seasons-stat {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0.2rem 0 !important;
+    margin-bottom: 0.4rem !important;
+    white-space: nowrap !important; /* Evita quebra de linha */
+}
+
+.label, .value {
+    display: inline-block !important;
+}
+
+/* Reduzindo espaçamento entre labels e valores */
+.seasons-stat .label {
+    margin-right: 0.01rem !important; /* Espaço mínimo entre "Seasons:" e o ano */
+    display: inline !important;
+}
+
+/* Reduzindo espaço em todas as estatísticas */
+.stat .label {
+    margin-right: 0.01rem !important;
+}
+
+/* Prevenindo quebra de linha nas estatísticas */
+.driver-stats .stat, .seasons-stat {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    width: 100% !important;
+}
+
+/* Reset - usar tamanho padrão para todos, ajustar somente quando necessário */
+.seasons-value {
+    font-size: inherit !important;
+    letter-spacing: normal !important;
+}
+
+/* Garantir que textos mais longos sejam ajustados apenas quando não couberem */
+@media screen and (min-width: 768px) {
+    /* Para temporadas realmente longas, ajustar apenas se exceder 270px */
+    .seasons-value:nth-child(1n) {
+        max-width: 270px;
+        display: inline-block !important;
+    }
+
+    /* Ajuste dinâmico apenas para temporadas extremamente longas */
+    .seasons-value:nth-child(1n):not(:empty) {
+        font-size: 0.95rem !important;
+    }
+
+    .seasons-value:nth-child(1n)[style*="width: 270px;"] {
+        font-size: 0.8rem !important;
+    }
+}

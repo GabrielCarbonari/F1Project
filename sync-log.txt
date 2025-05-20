@@ -1,0 +1,144 @@
+[2025-05-12 20:11:29] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:11:29 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:11:29] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:11:29 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:11:29] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:11:29 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:11:29] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:11:29 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:12:39] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:12:39 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:12:39] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:12:39 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:12:39] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:12:40 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:12:40] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:12:40 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:16:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:16:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:16:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:16:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:16:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:16:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:16:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:16:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:40] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:40 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:40] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:40 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:40] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:40 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:20:40] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:20:40 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:10] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:10 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:30] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:30 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:30] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:30 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:30] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:30 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:21:30] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:21:31 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:41] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:41 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:41] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:41 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:41] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:41 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:22:41] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:22:41 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:24:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:24:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:24:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:24:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:24:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:24:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:24:21] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:24:21 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:25:12] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:25:12 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:25:12] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:25:12 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:25:12] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:25:12 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:25:12] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:25:12 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:27:32] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:27:32 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:27:32] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:27:32 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:27:32] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:27:32 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:27:32] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:27:32 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:28:22] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:28:22 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:28:22] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:28:22 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:28:22] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:28:22 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:28:22] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:28:22 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:29:52] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:29:52 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:29:52] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:29:52 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:29:52] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:29:52 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:29:52] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:29:52 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:41:03] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:41:03 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:41:03] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:41:03 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:41:03] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:41:03 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:41:03] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:41:03 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:47:23] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:47:23 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:47:23] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:47:23 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:47:23] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:47:23 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 20:47:23] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 20:47:23 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 21:10:44] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 21:10:44 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 21:10:45] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 21:10:45 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 21:10:45] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 21:10:45 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 21:10:45] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 21:10:45 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 22:18:48] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 22:18:48 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 22:18:48] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 22:18:48 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 22:18:48] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 22:18:48 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.
+[2025-05-12 22:18:48] Iniciando sincronizaÃ§Ã£o
+[ERRO] 2025-05-12 22:18:48 - Não é possível validar o argumento no parâmetro 'ToSession'. O argumento é nulo ou vazio. Forneça um argumento que não seja nulo ou vazio e tente o comando novamente.

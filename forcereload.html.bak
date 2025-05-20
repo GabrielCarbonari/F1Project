@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Drivers Album - Carregando Dados Atualizados</title>
+    <style>
+        body {
+            font-family: 'Titillium Web', Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .loading-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e10600;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #e1e1e1;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .progress {
+            height: 100%;
+            background-color: #e10600;
+            width: 0%;
+            transition: width 1s ease;
+        }
+        .button {
+            background-color: #e10600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #c10500;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <h1>F1 Drivers Album</h1>
+        <p>Estamos atualizando os dados dos pilotos e corrigindo problemas de exibição...</p>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <p id="status-text">Iniciando limpeza de cache...</p>
+        
+        <a href="index.html" class="button" id="continue-button" style="display: none;">Continuar para o Album</a>
+    </div>
+
+    <script>
+        // Limpar completamente o cache do navegador para este site
+        function clearCache() {
+            // Limpar localStorage
+            localStorage.clear();
+            
+            // Limpar sessionStorage
+            sessionStorage.clear();
+            
+            // Forçar recarga dos arquivos principais
+            const urls = [
+                './data/drivers.json',
+                './js/script.js',
+                './css/direct-solution.css',
+                './css/emergency-fix.css'
+            ];
+            
+            let completed = 0;
+            const progress = document.getElementById('progress');
+            const statusText = document.getElementById('status-text');
+            
+            urls.forEach((url, index) => {
+                statusText.textContent = `Recarregando ${url}...`;
+                
+                // Forçar carregamento sem cache
+                fetch(url + '?t=' + Date.now(), { 
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache'
+                    }
+                })
+                .then(() => {
+                    completed++;
+                    const percentage = (completed / urls.length) * 100;
+                    progress.style.width = percentage + '%';
+                    
+                    if (completed === urls.length) {
+                        statusText.textContent = 'Dados atualizados com sucesso!';
+                        document.getElementById('continue-button').style.display = 'inline-block';
+                    }
+                })
+                .catch(err => {
+                    console.error(`Erro ao carregar ${url}:`, err);
+                    statusText.textContent = `Erro ao carregar ${url}. Tentando continuar...`;
+                    completed++;
+                });
+            });
+        }
+        
+        // Iniciar limpeza quando a página carregar
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(clearCache, 500);
+        });
+    </script>
+</body>
+</html>

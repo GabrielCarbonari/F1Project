@@ -1,0 +1,63 @@
+/**
+ * Estilos específicos para a exibição de temporadas de pilotos especiais
+ * Garante que as temporadas fiquem em uma única linha
+ */
+
+/* Estilo base para o container de temporadas */
+.seasons-stat.special-seasons {
+    display: flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    width: 100% !important;
+    font-size: 0.75rem !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Estilo para o rótulo (label) */
+.seasons-stat.special-seasons .label {
+    white-space: nowrap !important;
+    margin-right: 4px !important;
+    display: inline-block !important;
+    flex-shrink: 0 !important;
+}
+
+/* Estilo para o valor das temporadas */
+.seasons-stat.special-seasons .value {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: inline-block !important;
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1200px) {
+    .seasons-stat.special-seasons {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 768px) {
+    .seasons-stat.special-seasons {
+        font-size: 0.65rem !important;
+    }
+    
+    .seasons-stat.special-seasons .label {
+        margin-right: 2px !important;
+    }
+}
+
+/* Garantir que o container principal não quebre o layout */
+.driver-card .driver-stats {
+    min-width: 0; /* Permite que o container encolha abaixo do tamanho do conteúdo */
+}
+
+/* Garantir que o texto não quebre */
+.seasons-stat.special-seasons br {
+    display: none !important;
+}

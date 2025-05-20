@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recarregar Formula 1 Drivers Album</title>
+    <style>
+        body {
+            font-family: 'Titillium Web', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #e10600;
+            margin-bottom: 30px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        .logo img {
+            width: 150px;
+        }
+        
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: #e10600;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c00500;
+        }
+        
+        .btn-secondary {
+            background-color: #15151e;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #27273e;
+        }
+        
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 5px solid #e10600;
+            text-align: left;
+        }
+        
+        .info h3 {
+            margin-top: 0;
+            color: #e10600;
+        }
+        
+        .progress {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background-color: #e10600;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .status {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/f1-logo.svg" alt="Formula 1 Logo">
+        </div>
+        
+        <h1>Recarregar Dados de Pilotos F1</h1>
+        
+        <p>Esta página força o recarregamento completo dos dados dos pilotos, ignorando completamente qualquer cache de navegador.</p>
+        
+        <div class="info">
+            <h3>Informações sobre este problema</h3>
+            <p>O navegador pode armazenar os dados em cache, fazendo com que alterações recentes não apareçam imediatamente. Este utilitário irá:</p>
+            <ul>
+                <li>Forçar uma nova carga dos dados do arquivo drivers.json</li>
+                <li>Limpar todos os caches do navegador relacionados a estes dados</li>
+                <li>Garantir que os dados de Jonathan Williams e outros pilotos estejam atualizados</li>
+            </ul>
+        </div>
+        
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+            <p class="status" id="status-message">Iniciando processo de recarregamento...</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="reload-btn" class="btn btn-primary">Recarregar Dados Agora</button>
+            <button id="return-btn" class="btn btn-secondary">Voltar para Álbum de Pilotos</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reloadBtn = document.getElementById('reload-btn');
+            const returnBtn = document.getElementById('return-btn');
+            const progressSection = document.querySelector('.progress');
+            const progressFill = document.getElementById('progress-fill');
+            const statusMessage = document.getElementById('status-message');
+            
+            // Botão para voltar ao álbum
+            returnBtn.addEventListener('click', () => {
+                // Adicionar timestamp à URL para evitar cache
+                const timestamp = new Date().getTime();
+                window.location.href = `index.html?nocache=${timestamp}`;
+            });
+            
+            // Botão para recarregar dados
+            reloadBtn.addEventListener('click', async () => {
+                // Mostrar progresso
+                progressSection.style.display = 'block';
+                reloadBtn.disabled = true;
+                returnBtn.disabled = true;
+                
+                try {
+                    // Primeiro estágio - 25%
+                    updateProgress(25, "Limpando cache do navegador...");
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    
+                    // Limpar potenciais caches
+                    localStorage.clear();
+                    sessionStorage.clear();
+                    
+                    // Segundo estágio - 50%
+                    updateProgress(50, "Verificando dados no servidor...");
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    
+                    // Carregar dados diretamente do arquivo JSON
+                    const timestamp = new Date().getTime();
+                    const response = await fetch(`data/drivers.json?v=${timestamp}`, {
+                        method: 'GET',
+                        headers: {
+                            'Cache-Control': 'no-cache, no-store, must-revalidate',
+                            'Pragma': 'no-cache',
+                            'Expires': '0'
+                        },
+                        cache: 'no-store'
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`Erro ao carregar dados: ${response.status}`);
+                    }
+                    
+                    // Terceiro estágio - 75%
+                    updateProgress(75, "Processando dados de pilotos...");
+                    
+                    const data = await response.json();
+                    
+                    // Verificar se Jonathan Williams está presente
+                    const jonathan = data.find(d => d.Name === "Jonathan Williams");
+                    
+                    if (jonathan) {
+                        console.log("Dados de Jonathan Williams:", jonathan);
+                        
+                        // Verificar se os dados estão corretos
+                        if (jonathan.BirthDate === "26/10/1942" && 
+                            jonathan.DeathDate === "31/08/2014" && 
+                            jonathan["fatal accident"] === "No") {
+                            
+                            // Quarto estágio - 100%
+                            updateProgress(100, "Dados verificados e estão corretos! Redirecionando...");
+                            
+                            // Esperar um pouco para mostrar a mensagem
+                            await new Promise(resolve => setTimeout(resolve, 1500));
+                            
+                            // Redirecionar com um parâmetro único para evitar cache
+                            window.location.href = `index.html?updated=true&v=${timestamp}`;
+                        } else {
+                            updateProgress(90, "Dados encontrados mas estão desatualizados. Tentando correção...");
+                            await new Promise(resolve => setTimeout(resolve, 1500));
+                            
+                            // Redirecionar para a página principal, mas com aviso
+                            window.location.href = `index.html?reload=true&v=${timestamp}`;
+                        }
+                    } else {
+                        updateProgress(90, "Jonathan Williams não encontrado nos dados!");
+                        await new Promise(resolve => setTimeout(resolve, 1500));
+                        
+                        // Redirecionar para a página principal, mas com aviso
+                        window.location.href = `index.html?error=missing&v=${timestamp}`;
+                    }
+                    
+                } catch (error) {
+                    console.error("Erro durante o recarregamento:", error);
+                    updateProgress(100, `Erro: ${error.message}. Tente novamente.`);
+                    
+                    // Reativar botões
+                    reloadBtn.disabled = false;
+                    returnBtn.disabled = false;
+                }
+            });
+            
+            // Função para atualizar o progresso
+            function updateProgress(percent, message) {
+                progressFill.style.width = `${percent}%`;
+                statusMessage.textContent = message;
+            }
+        });
+    </script>
+</body>
+</html>

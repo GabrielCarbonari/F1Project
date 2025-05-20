@@ -1,0 +1,52 @@
+/* Estilos para as imagens dos pilotos */
+.driver-card .driver-image {
+    width: 100%; /* Voltar ao tamanho original do contêiner */
+    height: 180px; /* Altura original do contêiner */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+
+.driver-card .driver-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isso garante que a imagem cubra o espaço mantendo as proporções */
+    object-position: center center; /* Centralizar a imagem */
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom suave ao passar o mouse */
+.driver-card:hover .driver-image img.loaded {
+    transform: scale(1.05);
+}
+
+/* Mantemos o comportamento padrão de hover com borda vermelha */
+/* Sem adicionar nenhum estilo permanente ao card ou nome do piloto */
+
+/* Placeholder para quando a imagem não é encontrada */
+.driver-card .driver-image img:not(.loaded) {
+    opacity: 0.5;
+    object-fit: contain; /* Para o placeholder usar contain ao invés de cover */
+    padding: 20px;
+}
+
+/* Garantir que Seasons permaneça na mesma linha conforme preferência do usuário */
+.driver-card .seasons-stat {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.driver-card .seasons-stat .label {
+    margin-right: 0.2rem; /* Espaçamento específico conforme solicitado */
+}
+
+/* Redução automática para pilotos com muitas temporadas */
+.driver-card [data-long-seasons="true"] .seasons-value {
+    font-size: 0.8rem;
+    letter-spacing: -0.5px;
+}
